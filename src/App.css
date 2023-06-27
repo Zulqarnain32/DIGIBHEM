@@ -1,0 +1,850 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  user-select: none;
+  font-family: "Poppins",sans-serif;
+}
+:root{
+  --malta:rgb(255, 86, 2);
+  --silver:#3f3753;
+}
+
+Link{
+  text-decoration: none !important;
+  color: red;
+  list-style: none;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.hero-container{
+  height: 100vh;
+  width: 100%;
+  background-image: url("/assets/hero.jpg");
+  background-size: cover;
+}
+.layer{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(23, 18, 96, .5);
+}
+nav{
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  line-height: 70px;
+  padding: 0 70px;
+  z-index: 1;
+}
+.nav-is-active{
+  overflow-y: hidden;
+}
+.logo{
+  float: left;
+  width: 160px;
+  margin-top: 12px;
+  color: #fff;
+}
+.menu-icon{
+  float: right;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  margin-top: 6px;
+  display: none;
+}
+ul{
+  float: right;
+  display: flex;
+}
+.nav-links{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+ul li:not(:last-child){
+  margin-right: 30px;
+  font-size: 18px;
+}
+.nav-links:hover{
+  color: var(--malta);
+  /* font-weight: 600; */
+}
+.book-online{
+  background-color: var(--malta);
+  height: 35px;
+  width: 100px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+.book-online:hover{
+  background-color: rgb(214, 77, 8);
+}
+.book-online-btn{
+  background-color: var(--malta);
+
+  padding: 8px 7px;
+  width: 100px;
+}
+.book-online-btn:hover{
+  background-color: var(--malta);
+  background-color: rgb(234, 42, 8);
+
+  padding: 7px 6px;
+  width: 100px;
+  color: #fff;
+}
+.hero-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 60%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-title{
+  color: #fff;
+  font-size: 70px;
+  font-family: 'Heebo', sans-serif;
+}
+.hero-para{
+  color: #fff;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.hero-buttons button{
+  background-color: var(--malta);
+  height: 35px;
+  width: 100px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 15px;
+  margin-top: 30px;
+}
+.contact{
+  margin-right: 5px;
+}
+.book{
+  margin-left: 5px;
+  background-color: transparent !important;
+  border:2px solid var(--malta) !important;
+}
+.book:hover{
+  background-color:var(--malta) !important;
+}
+
+/* about page css  */
+
+.about-container {
+  margin-top: 100px;
+  width: 100%;
+}
+.about-sub-container{
+  position: relative;
+  /* background-color: rgb(255, 208, 0); */
+  width: 86%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.back-text{
+  position: absolute;
+  color: #f2f2f3;
+  font-size: 70px;
+  top: 0;
+  z-index: -1;
+}
+.about-content{
+  /* background-color: red; */
+  width: 60%;
+  text-align: justify;
+  padding-top: 30px;
+}
+.about-content p{
+  margin-top: 12px;
+}
+.aboutus{
+  height: 30px;
+  width: 90px;
+  background-color: var(--silver);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  margin-top: 18px;
+}
+
+/* banner css is here  */
+.banner-container{
+  margin-top: 80px;
+  height: 170px;
+  width: 100%;
+  background-image: url("/assets/hero.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.banner-container .banner-layer{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(23, 18, 96, .7);
+}
+.banner-sub-container{
+  text-align: center;
+  width: 90%;
+  height: 100%;
+  /* background-color: red; */
+  margin: 0 auto;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.banner-sub-container h2{
+  margin-top: 50px;
+}
+
+
+/* Room css is here  */
+
+.room-container {
+  margin-top: 90px;
+  width: 100%;
+}
+.room-sub-container{
+  position: relative;
+  /* background-color: rgb(255, 208, 0); */
+  width: 86%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: red; */
+  flex-wrap: wrap;
+}
+.back-text{
+  position: absolute;
+  color: #f2f2f3;
+  font-size: 70px;
+  top: 0;
+  z-index: -1;
+}
+
+
+/* room images css  */
+.rooms-images-container{
+  width: 92%;
+  margin: 20px auto;
+  text-align: center;
+}
+.rooms-images{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap:10px ;
+  grid-row-gap:30px ;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.rooms-images .single-image-box{
+  border: .4px solid rgb(223, 221, 221);
+  width: 345px;
+  margin: 0 auto;
+  /* background-color: yellow; */
+}
+.rooms-images .single-image-box img{
+  width: 345px;
+  height: 280px;
+  object-fit: cover;
+}
+.single-image-box h3{
+  margin-top: 7px;
+}
+.ranking-stars .r-stars{
+  color: yellow;
+  
+}
+.single-image-box p{
+  font-weight: 600;
+  color: var(--silver);
+}
+.book-room{
+  background-color: var(--silver);
+  color: #fff;
+  width: 120px;
+  cursor: pointer;
+  border: none;
+  height: 32px;
+  /* padding-top: 2px; */
+  margin-bottom: 30px;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+
+
+/* services page css  */
+.services-container{
+  height: 340px;
+  width: 86%;
+  margin: 15px auto;
+  /* background-color: yellow; */
+
+
+}
+.services-sub-container{
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(255, 3, 3, 0.2); */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.services-sub-container .four-box-container{
+  /* background-color: rgb(98, 255, 6); */
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.four-box-container .four-containers{
+  /* background-color: red; */
+  border: 0;
+  /* background-color: #fff; */
+  height: 340px;
+  width: 95%;
+}
+.services-sub-container img{
+  height: 340px;
+  width: 100%;
+  object-fit: cover;
+}
+.four-box-container div{
+  height: 155px;
+  width: 260px;
+  /* background-color: rgb(145, 145, 105); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  border: 1px solid var(--malta);
+  /* row-gap: 10px; */
+}
+.services-single-box{
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content:center;
+  flex-direction: column;
+}
+.services-single-box h2{
+  color: var(--malta);
+  font-weight: 800;
+  font-size: 40px;
+  margin-top: 10px;
+}
+.services-single-box p{
+  color: var(--malta);
+  font-weight: 600;
+  font-size: 21px;
+}
+
+.services-image-container{
+  /* background-color: blue; */
+  height: 340px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.car-img{
+  height: 300px;
+}
+
+/* testmonial css  */
+.carousel-container{
+  height: 400px;
+  width: 100%;
+  background-image: url("assets/testimonial-banner.jpg");
+  background-size: cover;
+  margin-top: 100px;
+
+
+}
+.carousel-layer-container{
+  height: 100% !important;
+  width: 100% !important;
+  background-color: red !important;
+}
+.hel{
+  height: 400px;
+  width: 100%;
+  background-color: rgb(23, 18, 96, .7);
+  margin-top: 0px;
+  color: #fff;
+  /* width: 800px; */
+  margin: 0 auto;
+}
+.hel p{
+  width: 70%;
+  /* background-color: red; */
+  margin: 0px auto;
+  padding-top: 80px;
+  text-align: center;
+}
+.client-name{
+  /* color: red; */
+  margin-top: 20px !important;
+  text-align: center;
+  color: var(--malta);
+  font-weight: 700;
+}
+/* footer css  */
+.footer-container{
+  margin-top: 70px;
+  height: 360px;
+  width: 100%;
+  background-color: var(--silver);
+  padding: 20px;
+}
+.footer-sub-container{
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+.footer-sub-container div{
+  /* background-color: yellow; */
+  height: 100%;
+  /* border: 2px solid red; */
+  padding: 10px 20px;
+}
+.footer-sub-container div h1{
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.footer-sub-container  p{
+  color: #fff ;
+  text-align: justify;
+}
+.links-footer{
+  text-transform: capitalize;
+}
+.social-media-links-hai{
+  /* background-color: teal; */
+  height: 60px !important;
+  width: 240px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-link{
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 10px;
+  /* border: 2px solid red; */
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+}
+.patti{
+  background-color: var(--silver);
+  margin-top: 0px;
+  width: 100%;
+  font-size: 14px !important;
+  text-align: center;
+  color: #fff;
+  border-top: 1px solid #fff;
+  height: 30px;
+  line-height: 30px;
+}
+
+
+/* registaraion form css  */
+  .main-title{
+    text-transform: capitalize;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    /* border: 1px solid black; */
+  
+  }
+  .title{
+    text-transform: capitalize;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #000000;
+    margin-top: 20px;
+    padding: 3px 0;
+    margin-bottom: 30px;
+  }
+  .custumer-data{
+    /* position: relative; */
+    /* border: 1px solid black; */
+    padding: 10px 20px;
+    margin: 10px 0;
+  }
+  .cus-field{
+    
+    border: 0.5px solid rgb(167, 163, 163);
+    padding: 8px 12px !important;
+    margin: 12px 0;
+    width: 300px;
+    font-size: 20px;
+    outline: none;
+  }
+  .cus-field:focus{
+    border: 2px solid black;
+  }
+  .fields h3{
+    margin: 0;
+    padding: 0;
+  }
+  .images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .room-info{
+    text-align: center;
+    /* background-color: red; */
+  }
+  
+  .room-info img{
+    width: 300px;
+    margin-top: 10px;
+  }
+  h5{
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  .room-type{
+    margin-top: 10px;
+    /* background-color: red; */
+  }
+  .radio, .check{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+  .advance{
+    /* border: 1px solid black; */
+    padding: 10px 20px;
+    margin: 10px 0;
+
+  }
+  .advancefield{
+    border: 0.5px solid rgb(167, 163, 163);
+    padding: 8px 12px !important;
+    margin: 12px 0;
+    width: 300px;
+    font-size: 20px;
+    outline: none;
+  }
+  .advancefield:focus{
+    border: 2px solid black;
+  }
+  .register-section{
+    text-align: center;
+  }
+  .register{
+    height: 40px;
+    cursor: pointer;
+    width: 160px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 23px;
+    margin-top: 12px;
+    margin-bottom: 30px;
+  }
+  .searchbox{
+    text-align: center;
+    margin-top: 30px;
+  }
+  .search-field{
+    font-size: 20px;
+    padding: 8px 12px;
+    margin-bottom: 30px;
+    outline: none;
+    border: 0.5px solid rgb(167, 163, 163);
+    width: 300px;
+  }
+  .search-field:focus{
+    border: 2px solid black;
+  }
+
+  .complete{
+    margin-top: 10px;
+    background-color: rgb(212, 212, 212);
+    padding: 10px 20px;
+    line-height: 40px;
+    position: relative;
+    margin:20px;
+    padding-top: 55px;
+  }
+  .complete > span{
+    margin-top: 20px;
+    font-size: 23px;
+  }
+  .field-data{
+    position: absolute;
+    right: 20px;
+    text-transform: capitalize;
+  }
+  .remove{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #fff;
+    background-color: red;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border: 0;
+    font-weight: 800;
+    font-size: 27px;
+    line-height: 30px;
+  }
+  .go-back{
+    background-color: var(--silver);
+    height: 34px;
+    width: 120px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    margin-left: 20px;
+  }
+
+.icons{
+  color: var(--malta);
+  margin-right: 10px;
+}
+
+.naveverypage{
+  margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+/* responsive design css is here  */
+
+@media(max-width:420px){
+
+  nav{
+    padding: 0 10px;
+  }
+  .hero-content{
+    width: 90%;
+  }
+  .hero-title{
+    font-size: 30px;
+  }
+  .menu-icon {
+    display: block;
+    margin-top: 5px;
+  }
+  .nav-elements {
+    position: absolute;
+    left: -160px;
+    top: 69px;
+    background-color:var(--silver) ;
+    background-color: rgb(23, 22, 56);
+    width: 160px;
+    height: calc(100vh - 70px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+  }
+ 
+  .nav-elements.active {
+    left: 0;
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+    float: left;
+  }
+  ul li{
+    margin-left: -10px !important;
+ 
+  }
+  .book-online{
+    background-color: transparent;
+    border: 2px solid var(--malta);
+  }
+
+  /* about page css  */
+  .about-container {
+    margin-top: 60px;
+  }
+  .about-sub-container{
+    width: 90%;
+    /* flex-direction: column; */
+  }
+  .about-content{
+    width: 100%;
+    padding-top: 16px;
+  }
+  .about-content p{
+    margin-top: 24px;
+  }
+  .back-text{
+    font-size: 55px;
+    /* color: red; */
+  }
+   .hotelname{
+    font-weight: 500;
+   }
+
+  .about-sub-container img{
+    width: 320px;
+    margin-top: 20px;
+  }
+  .about-img{
+    width: 100%;
+    text-align: center;
+  }
+
+   /* banner css is here  */
+   .banner-container{
+    height: 340px;
+   }
+   .banner-sub-container{
+    grid-template-columns: repeat(2,1fr);
+   }
+   /* room css  */
+   .rooms-images .single-image-box{
+    width: 320px;
+  }
+  .rooms-images .single-image-box img{
+    width: 320px;
+  }
+   .rooms-images-container{
+    width: 100%;
+   }
+  
+   .rooms-images{
+    width: 100%;
+   }
+   .rooms-images{
+    grid-template-columns: 1fr;
+   }
+
+   /* servicess css is here   */
+   .services-container{
+    height: auto;
+    width: 100%;
+    margin: 15px auto;
+    /* background-color: yellow; */
+  
+  
+  }
+  .services-sub-container{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(255, 3, 3, 0.2); */
+    display: grid;
+    grid-template-columns: 1fr ;
+  }
+  .four-box-container{
+    margin-bottom: 20px;
+  }
+  .four-box-container div{
+    height: 160px;
+    width: 160px;
+    /* background-color: rgb(145, 145, 105); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* row-gap: 10px; */
+  }
+  .four-box-container .four-containers{
+    /* background-color: red; */
+    /* background-color: #fff; */
+    height: 340px;
+    width: 100%;
+  }
+   /* testimonial css is here  */
+   .carousel-container{
+    height: 600px;
+    width: 100%;
+    /* background-image: url("assets/testimonial-banner.jpg"); */
+    background-image: url("assets/room1.avif");
+    background-size: cover;
+    margin-top: 20px;
+  
+  
+  }
+
+  .client-name{
+    /* color: red; */
+    margin-top: 20px !important;
+    text-align: center;
+    color: var(--malta);
+    font-weight: 700;
+  }
+  .hel{
+    height: 600px;
+    width: 100%;
+    background-color: rgb(23, 18, 96,);
+    color: #fff;
+    margin: 0 auto;
+  }
+
+  /* footer csss is hre  */
+  .footer-container{
+  margin-top: 70px;
+  height:auto;
+  width: 100%;
+  background-color: var(--silver);
+  padding: 20px;
+}
+.footer-sub-container{
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+  
+   /* registration form css  */
+   .images{
+    grid-template-columns: 1fr;
+  }
+  .go-back{
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+  }
+}
