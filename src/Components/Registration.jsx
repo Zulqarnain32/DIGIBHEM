@@ -86,7 +86,7 @@ const Registration = () => {
     <>
     <form  onSubmit={handleSumbit}>
         <h1 className='main-title mt-5 pt-5'>hotel registration form</h1>
-        <Link to="/"><button className="go-back">Go Back</button></Link>
+        {/* <Link to="/"><button className="go-back">Go Back</button></Link> */}
         <div className="title">custumer info</div>
         <div className="custumer-data">
             <div className="fields">

@@ -14,7 +14,10 @@ const App = () => {
     <>
        <BrowserRouter>
        <NavEveryPage/>
-       {/* <NavEveryPage/> */}
+       <NavEveryPage/>
+       <NavEveryPage/>
+       <NavEveryPage/>
+       <NavEveryPage/>
          <Routes>
            <Route path='/' element = {<Navbar/>}/>
            <Route path='/about' element = {<About/>}/>

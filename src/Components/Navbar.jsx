@@ -69,7 +69,7 @@ const Navbar = () => {
                     <Link to = "/" className='nav-links'><span onClick={handleShowNavbar}>Home</span></Link>
                   </li>
                   <li>
-                    <Link to = "/about" className='nav-links' ><span>About</span></Link>
+                    <Link to = "/about" className='nav-links' ><span onClick={handleShowNavbar}>About</span></Link>
                   </li>
                   <li>
                     <Link to = "/rooms" className='nav-links' ><span  onClick={handleShowNavbar}>Rooms</span></Link>
@@ -82,7 +82,7 @@ const Navbar = () => {
                   </li>
                  
                   <li>
-                    <Link to = "register" className='book-online-btn nav-links' >Book Online </Link>
+                    <Link to = "register" className='book-online-btn nav-links'  onClick={handleShowNavbar}>Book Online </Link>
                   </li>
                 </ul>
               </div>
